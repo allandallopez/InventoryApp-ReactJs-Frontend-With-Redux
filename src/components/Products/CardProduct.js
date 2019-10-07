@@ -56,8 +56,9 @@ const CardProduct = (props, refresh) => {
 	}
 
 	return (
-		<div className="col-md-5 card" style={{ margin: 10 }}>
+		<div className="col-md-5 card" style={{ margin: 5 }}>
 			<img
+				style={{width: 280, height: 180}}
 				src={props.Product.image}
 				onError={() => {
 					props.Product.image =

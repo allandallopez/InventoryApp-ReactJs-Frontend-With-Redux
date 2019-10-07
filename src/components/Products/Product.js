@@ -48,9 +48,8 @@ export class ProductList extends Component {
 				</h4>
 			</Container>
 		) : (
-			<div className="text-center">
-				<h2> </h2>
-
+			<div className="text-center" >
+				{/* <h2> </h2> */}
 				<form onSubmit={this.handlerSubmit}>
 					<table>
 						<tr>

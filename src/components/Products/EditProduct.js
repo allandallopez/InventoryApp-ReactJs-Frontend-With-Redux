@@ -37,13 +37,11 @@ class EditProduct extends Component {
 		e.preventDefault();
 		console.log(this.state);
 		this.props.dispatch(editProduct(id, this.state));
-		// window.location.replace('/Product');
 		this.props.history.push('/Product');
 	};
 
 	handlerSelect = (e) => {
 		this.setState({ [e.target.name]: Number(e.target.options[e.target.selectedIndex].value) });
-		// window.location.replace('/Product');
 	};
 
 	render() {
